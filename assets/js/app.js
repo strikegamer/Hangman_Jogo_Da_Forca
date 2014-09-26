@@ -123,7 +123,7 @@ var app = {
 		app.endGame();
 	},
 	endGame: function(){
-		window.location.href = "/";
+		location.reload();
 	},
 	init: function(){
 		app.loadScreens();
