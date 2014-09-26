@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="icon" href="assets/img/favicon.png" />
+	<!-- Libs Styles -->
+	<link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" media="all">	
+	<!-- App Styles -->
+	<link rel="stylesheet" href="assets/css/style.css" media="all">
+</head>
+<body>
+	<section id="gameCanvas" class="col-md-12">
+		<section id="startScreen" class="text-center screen screen-on">
+			<h1>Digite a palavra</h1>
+			<input type="text" class="form-control input-lg" id="inputWord">		
+			<button class="btn btn-lg btn-primary" onclick="app.start()">Iniciar</button>
+		</section><!-- /#startScreen -->
+		<section id="gameScreen" class="screen">
+			<svg version="1.1" id="character" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 width="81.504px" height="381.148px" viewBox="0 0 81.504 381.148" enable-background="new 0 0 81.504 381.148"
+				 xml:space="preserve">
+				<circle class="piece" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="40.752" cy="30.978" r="30.978"/>
+				<line class="piece" fill="none" stroke="#000000" stroke-miterlimit="10" x1="40.752" y1="61.957" x2="40.752" y2="196.739"/>
+				<line class="piece" fill="none" stroke="#000000" stroke-miterlimit="10" x1="9.774" y1="80.435" x2="71.73" y2="80.435"/>
+				<line class="piece" fill="none" stroke="#000000" stroke-miterlimit="10" x1="9.774" y1="80.435" x2="0" y2="179.348"/>
+				<line class="piece" fill="none" stroke="#000000" stroke-miterlimit="10" x1="71.73" y1="79.891" x2="81.504" y2="178.804"/>
+				<line class="piece" fill="none" stroke="#000000" stroke-miterlimit="10" x1="17.387" y1="197.283" x2="64.117" y2="197.283"/>
+				<line class="piece" fill="none" stroke="#000000" stroke-miterlimit="10" x1="17.663" y1="196.739" x2="7.889" y2="381.148"/>
+				<line class="piece" fill="none" stroke="#000000" stroke-miterlimit="10" x1="63.842" y1="196.739" x2="73.616" y2="381.148"/>
+			</svg>
+			<div id="wordChoices"></div>
+			<div id="keyboard">
+				<span class="char">A</span>
+				<span class="char">B</span>
+				<span class="char">C</span>
+				<span class="char">D</span>
+				<span class="char">E</span>
+				<span class="char">F</span>
+				<span class="char">G</span>
+				<span class="char">H</span>
+				<span class="char">I</span>
+				<span class="char">J</span>
+				<span class="char">K</span>
+				<span class="char">L</span>
+				<span class="char">M</span>
+				<span class="char">N</span>
+				<span class="char">O</span>
+				<span class="char">P</span>
+				<span class="char">Q</span>
+				<span class="char">R</span>
+				<span class="char">S</span>
+				<span class="char">T</span>
+				<span class="char">U</span>
+				<span class="char">V</span>
+				<span class="char">X</span>
+				<span class="char">W</span>
+				<span class="char">Y</span>
+				<span class="char">Z</span>				
+			</div>
+		</section><!-- gameScreen -->
+	</section><!-- /#gameCanvas -->
+	<!-- Libs Scripts -->
+	<script src="assets/libs/jquery/jquery-1.11.0.min.js"></script>
+	<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>	
+	<!-- App Scripts -->
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

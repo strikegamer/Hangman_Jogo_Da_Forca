@@ -1,0 +1,68 @@
+html, body{
+	height: 100%;
+}
+
+#gameCanvas{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.screen{
+	position: absolute;
+	opacity: 0;
+	width: inherit;
+	height: inherit;		
+}
+
+.screen-on{
+	opacity: 1;	
+}
+
+#character{
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+#wordChoices{
+	position: absolute;
+	top: 80px;
+	left: 200px;
+}
+
+#wordChoices .choice{
+	display: block;
+	float: left;
+	border-bottom: 3px solid #333;
+	width: 100px;
+	height: 100px;
+	line-height: 124px;
+	margin-right: 20px;
+	text-align: center;
+	font-size: 24px;
+}
+
+#keyboard{
+	position: absolute;
+	top: 230px;
+	left: 200px;
+}
+
+#keyboard .char{
+	display: block;	
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;	
+}
+
+.char-off{
+	cursor: default !important;
+	opacity: 0.25;
+}
+
+.piece{
+	display: none;
+}
